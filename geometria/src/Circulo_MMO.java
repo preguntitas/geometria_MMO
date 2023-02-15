@@ -6,6 +6,9 @@ public class Circulo_MMO extends FiguraGeometrica_MMO {
 	
 	public Circulo_MMO(double r, String tipoFigura) {
 		super(tipoFigura);
+		if (r < 0) {
+			r = Math.abs(r);
+		}
 		radio = r;
 	}
 
